@@ -1,0 +1,6 @@
+ERROR: The installer failed with exit code 1: [sudo] password for <UserName>: sudo: /usr/lib/virtualbox/VBoxExtPackHelperApp --stdout /tmp/VBoxExtPackHelper-<SomeRandomTextString>/stdout --stderr /tmp/VBoxExtPackHelper-<SomeRandomTextString>/stderr --elevated install --base-dir /usr/lib/virtualbox/ExtensionPacks --cert-dir /usr/share/virtualbox/ExtPackCertificates --name
+
+Reason: <GET Real Reason>, Gui prompt for user password says the password is wrong so I guess It's an issue with the function handling that part. 
+
+SOL: sudo VBoxManage extpack install <path to the extension pack>
+after this, restart virtualbox and done.
